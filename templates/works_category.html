@@ -1,0 +1,14 @@
+<h1><a href="<{$xoops_url}>/modules/works"><{$portfolio}></a> : <{$category.title}></h1>
+<p><{$category.description}></p>
+<div class="outer odd">
+<div class="even">
+<h3><{$latestjobs}></h3></div>
+<dl>
+<{foreach item=item from=$items}>
+<dt><{$item.title}></dt>
+<dd><{$item.description}><br />
+<strong><{$client_title}></strong>: <{$item.client}><br /><br /></dd>
+<{/foreach}>
+</dl>
+</div>
+<{*please do not remove it*}><{$powered_by}><{*please do not remove it*}>

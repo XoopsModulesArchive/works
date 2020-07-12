@@ -1,0 +1,15 @@
+<h1><a href="<{$xoops_url}>/modules/works"><{$portfolio}></a> : <a href="index.php?cid=<{$category.cid}>"><{$category.title}></a></h1>
+<div class="outer">
+<div class="head"><h2><{$item.title}></h2></div>
+<table>
+ <tr>
+  <td><div class="head"><strong><{$client_title}></strong></div>
+	  <div class="odd"><{$item.client}></div>
+	  <div class="head"><strong><{$description_title}></strong></div>
+	  <div class="odd"><{$item.description}></div>
+	  <{if $item.website || $item.date_begin || $item.date_end}><div class="head"><strong><{$details}></strong></div>
+	  <div class="odd"><{$item.website}><{$item.date_begin}><{$item.date_end}></div><{/if}><{if $item.imagedisplay}></td>
+  <td><{$item.imagedisplay}><{/if}></td>
+ </tr>
+</table></div>
+<{*please do not remove it*}><{$powered_by}><{*please do not remove it*}>

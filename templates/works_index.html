@@ -1,0 +1,29 @@
+<h1><a href="<{$xoops_url}>/modules/works"><{$xoops_pagetitle}></a></h1>
+<table>
+  <tr>
+    <td><div class="outer odd"><div class="even"><h4><{$categories_title}></h4></div>
+	<dl>
+	<{foreach item=category from=$categories}>
+	<dt><{$category.title}></dt>
+	<dd><{$category.description}><br /><br /></dd>
+	<{/foreach}>
+	</dl>
+	</div></td>
+    <{if $featured}><td width="33%"><div class="outer odd"><div class="even"><h4><{$featuredtitle}></h4></div>
+	<ul>
+	<{foreach item=featuredjob from=$featured}> <li><{$featuredjob.title}></li>
+	<{/foreach}></ul>
+	</div></td><{/if}>
+  </tr>
+</table>
+<div class="outer odd">
+<div class="even"><h3><{$latestjobs}></h3></div>
+<dl>
+<{foreach item=item from=$items}>
+<dt><{$item.title}></dt>
+<dd><{$item.description}><br />
+<strong><{$client_title}></strong>: <{$item.client}><br /><br /></dd>
+<{/foreach}>
+</dl>
+</div>
+<{*please do not remove it*}><{$powered_by}><{*please do not remove it*}>
